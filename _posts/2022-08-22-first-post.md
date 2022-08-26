@@ -6,8 +6,9 @@ categories: [markdown]
 title: Shraddha's First Post
 ---
 # First Post
-- 1
-- 2
-- 3
+Things that I am excited to learn about:
+- How to create your own blog with Fastpages
+- More about how computers work
+- More about how to code using vscode and Jupyter Notebook
 
 **Hello**. *My* name is Shraddha. 
