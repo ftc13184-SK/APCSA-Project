@@ -146,35 +146,23 @@ window.onload = wrap_img;
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">newPrimatives</span>
 <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
-
 <span class="p">{</span>
+    
     <span class="n">Scanner</span> <span class="n">keyboard</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Enter in Fahrenheit to convert from Fahrenheit to Celsius, or Celsius to convert from Celsius to Fahrenheit."</span><span class="p">);</span>
-    <span class="n">String</span> <span class="n">conversionDeterminer</span> <span class="o">=</span> <span class="n">keyboard</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Enter in 1 to convert from Fahrenheit to Celsius or 2 to convert from Celsius to Fahrenheit."</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">conversionDeterminer</span> <span class="o">=</span> <span class="n">keyboard</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Please enter a temperature."</span><span class="p">);</span>
     <span class="kt">int</span> <span class="n">originalTemp</span> <span class="o">=</span> <span class="n">keyboard</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
     <span class="kt">double</span> <span class="n">convertedTemp</span><span class="p">;</span>
-   <span class="kt">boolean</span> <span class="n">isFahrenheit</span><span class="p">;</span>
-   <span class="kt">boolean</span> <span class="n">isCelsius</span><span class="p">;</span>
 
-   <span class="k">if</span> <span class="p">(</span><span class="n">conversionDeterminer</span> <span class="o">==</span> <span class="s">"Fahrenheit"</span><span class="p">)</span>
-   <span class="p">{</span>
-        <span class="n">isFahrenheit</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-   <span class="p">}</span>
-   <span class="k">else</span> <span class="p">(</span><span class="n">conversionDeterminer</span> <span class="o">==</span> <span class="s">"Celsius"</span><span class="p">)</span>
-   <span class="p">{</span>
-        <span class="n">isCelsius</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-
-   <span class="p">}</span>
-
-   <span class="k">if</span><span class="p">(</span><span class="n">isFahrenheit</span><span class="p">)</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">conversionDeterminer</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
    <span class="p">{</span>
         <span class="n">convertedTemp</span> <span class="o">=</span> <span class="p">(</span><span class="n">originalTemp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mf">5.0</span><span class="o">/</span><span class="mi">9</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">convertedTemp</span><span class="p">);</span>
    <span class="p">}</span>
-   <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">isCesius</span><span class="p">)</span>
+   <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">conversionDeterminer</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
    <span class="p">{</span>
-        <span class="n">convertedTemp</span> <span class="o">=</span> <span class="n">originalTemp</span> <span class="o">*</span> <span class="p">(</span><span class="mf">9.0</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span><span class="mi">32</span><span class="p">;</span>
+        <span class="n">convertedTemp</span> <span class="o">=</span> <span class="n">originalTemp</span> <span class="o">*</span> <span class="p">(</span><span class="mf">9.0</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">32</span><span class="p">;</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">convertedTemp</span><span class="p">);</span>
    <span class="p">}</span>
    <span class="k">else</span>
@@ -196,13 +184,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">   else </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">(conversionDeterminer = "Celsius")</span>
-<span class="ansi-red-intense-fg ansi-bold">not a statement</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">   else (conversionDeterminer = "Celsius")</span>
-<span class="ansi-red-intense-fg ansi-bold">';' expected</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter in 1 to convert from Fahrenheit to Celsius or 2 to convert from Celsius to Fahrenheit.
+Please enter a temperature.
+21.11111111111111
 </pre>
 </div>
 </div>

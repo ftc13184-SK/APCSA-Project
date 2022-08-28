@@ -2,8 +2,19 @@
   
     
         "post0": {
+            "title": "Title",
+            "content": "",
+            "url": "https://ftc13184-sk.github.io/APCSA-Project/2022/08/27/Bash-Check.html",
+            "relUrl": "/2022/08/27/Bash-Check.html",
+            "date": " • Aug 27, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Primitives Hack Temperature Converter",
-            "content": "import java.util.Scanner; public class newPrimatives { public static void main(String[] args) { Scanner keyboard = new Scanner(System.in); System.out.println(&quot;Enter in Fahrenheit to convert from Fahrenheit to Celsius, or Celsius to convert from Celsius to Fahrenheit.&quot;); String conversionDeterminer = keyboard.nextLine(); System.out.println(&quot;Please enter a temperature.&quot;); int originalTemp = keyboard.nextInt(); double convertedTemp; boolean isFahrenheit; boolean isCelsius; if (conversionDeterminer == &quot;Fahrenheit&quot;) { isFahrenheit = true; } else (conversionDeterminer == &quot;Celsius&quot;) { isCelsius = true; } if(isFahrenheit) { convertedTemp = (originalTemp - 32) * (5.0/9); System.out.println(convertedTemp); } else if(isCesius) { convertedTemp = originalTemp * (9.0/5) +32; System.out.println(convertedTemp); } else { System.out.println(&quot;Sorry, that input is not valid. Please try running the program again.&quot;); } } } newPrimatives.main(null); . | else (conversionDeterminer = &#34;Celsius&#34;) not a statement | else (conversionDeterminer = &#34;Celsius&#34;) &#39;;&#39; expected .",
+            "content": "import java.util.Scanner; public class newPrimatives { public static void main(String[] args) { Scanner keyboard = new Scanner(System.in); System.out.println(&quot;Enter in 1 to convert from Fahrenheit to Celsius or 2 to convert from Celsius to Fahrenheit.&quot;); int conversionDeterminer = keyboard.nextInt(); System.out.println(&quot;Please enter a temperature.&quot;); int originalTemp = keyboard.nextInt(); double convertedTemp; if(conversionDeterminer == 1) { convertedTemp = (originalTemp - 32) * (5.0/9); System.out.println(convertedTemp); } else if(conversionDeterminer == 2) { convertedTemp = originalTemp * (9.0/5) + 32; System.out.println(convertedTemp); } else { System.out.println(&quot;Sorry, that input is not valid. Please try running the program again.&quot;); } } } newPrimatives.main(null); . Enter in 1 to convert from Fahrenheit to Celsius or 2 to convert from Celsius to Fahrenheit. Please enter a temperature. 21.11111111111111 .",
             "url": "https://ftc13184-sk.github.io/APCSA-Project/jupyter/2022/08/25/Temperature-Converter.html",
             "relUrl": "/jupyter/2022/08/25/Temperature-Converter.html",
             "date": " • Aug 25, 2022"
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Fastpages Notebook Blog Post",
             "content": "Python Notebook . print(&#39;Hello World&#39;) . Hello World .",
             "url": "https://ftc13184-sk.github.io/APCSA-Project/jupyter/2022/08/22/python-notebook.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Fastpages Notebook Blog Post",
             "content": "Java Notebook . System.out.println(&quot;Hello World&quot;); System.out.println(&quot;This is my Java Notebook.&quot;); System.out.println(&quot;Welcome!&quot;); . Hello World This is my Java Notebook. Welcome! .",
             "url": "https://ftc13184-sk.github.io/APCSA-Project/jupyter/2022/08/22/java-notebook.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Shraddha's First Post",
             "content": "First Post . Things that I am excited to learn about: . How to create your own blog with Fastpages | More about how computers work | More about how to code using vscode and Jupyter Notebook | . Hello. My name is Shraddha. .",
             "url": "https://ftc13184-sk.github.io/APCSA-Project/markdown/2022/08/22/first-post.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "An Example Markdown Post",
             "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
             "url": "https://ftc13184-sk.github.io/APCSA-Project/markdown/2020/01/14/test-markdown-post.html",
