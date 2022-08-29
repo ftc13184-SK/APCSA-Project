@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": ". toc: true | layout: post | description: Shraddha&#39;s CSA Notes | categories: [markdown] | title: APCSA Notes | . . CSA Notes . Intro . Computer Science A is a course that is broken into 10 units. Below are the units and some notes for each of them. .",
-            "url": "https://ftc13184-sk.github.io/APCSA-Project/2022/08/28/CSA-Notes.html",
-            "relUrl": "/2022/08/28/CSA-Notes.html",
+            "title": "APCSA Notes",
+            "content": ". CSA Notes . Intro . Computer Science A is a course that is broken into 10 units. Below are the units and some notes for each of them. .",
+            "url": "https://ftc13184-sk.github.io/APCSA-Project/jupyter/2022/08/28/CSA-Notes.html",
+            "relUrl": "/jupyter/2022/08/28/CSA-Notes.html",
             "date": " • Aug 28, 2022"
         }
         
