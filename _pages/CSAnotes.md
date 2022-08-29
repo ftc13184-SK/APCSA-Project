@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: CSA Notes
 permalink: /CSA Notes/
 ---
 This is where I will record my notes from CSA. 
