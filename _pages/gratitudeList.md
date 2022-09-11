@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Code.org Notes
+title: Gratitude
 permalink: /Code.org Notes/
 ---
 # Gratitude List
