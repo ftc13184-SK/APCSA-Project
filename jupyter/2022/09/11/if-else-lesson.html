@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/APCSA-Project/Code.org%20Notes/">Code.org Notes</a><a class="page-link" href="/APCSA-Project/CSA%20Notes/">CSA Notes</a><a class="page-link" href="/APCSA-Project/Frontend/">Frontend</a><a class="page-link" href="/APCSA-Project/about/">About Me</a><a class="page-link" href="/APCSA-Project/Code.org%20Notes/">Code.org Notes</a><a class="page-link" href="/APCSA-Project/search/">Search</a><a class="page-link" href="/APCSA-Project/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/APCSA-Project/Code.org%20Notes/">Code.org Notes</a><a class="page-link" href="/APCSA-Project/CSA%20Notes/">CSA Notes</a><a class="page-link" href="/APCSA-Project/Frontend/">Frontend</a><a class="page-link" href="/APCSA-Project/about/">About Me</a><a class="page-link" href="/APCSA-Project/Code.org%20Notes/">Gratitude</a><a class="page-link" href="/APCSA-Project/search/">Search</a><a class="page-link" href="/APCSA-Project/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -129,6 +129,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#If-else-Statements">If else Statements </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#If-elese-statements-are-used-in-Java-to-execute-a-certain-action-if-certain-conditions-are-met.-If-the-conditions-are-not-met,-there-may-be-an-"else"-statement-to-perform-a-different-action.">If elese statements are used in Java to execute a certain action if certain conditions are met. If the conditions are not met, there may be an &quot;else&quot; statement to perform a different action. </a></li>
+<li class="toc-entry toc-h2"><a href="#Switch-Statements">Switch Statements </a></li>
+<li class="toc-entry toc-h2"><a href="#De-Morgan's-Law">De Morgan&#39;s Law </a></li>
 </ul>
 </li>
 </ul><!--
@@ -169,27 +171,53 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> 
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="c1">//define class</span>
 <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="c1">//java main method</span>
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> 
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">//declare the integer variable </span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">//if statement format with parameters </span>
     <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than zero"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 2"</span><span class="p">);</span> <span class="c1">//if the number is greater than zero, print this statement. </span>
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="p">}</span>
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number is greater than 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>If statements often use else statements to specify what the code should do if the first condition is not met. </li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -197,16 +225,263 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">print</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Else</span> 
 <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hello world"</span><span class="p">);</span> 
-<span class="p">}</span> 
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 2"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is not greater than 2"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+    <span class="p">}</span>
 <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Else</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number is not greater than 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Switch-Statements">
+<a class="anchor" href="#Switch-Statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Switch Statements<a class="anchor-link" href="#Switch-Statements"> </a>
+</h2>
+<ul>
+<li>Switch statements can be used in adition to if-else statements to switch between different commands in code. For exmple, a user can enter whitch case they would like to run or that computer will go through all of the switches. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">switchExample</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 
+    <span class="k">switch</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 2"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is not greater than 2"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+        <span class="p">}</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 3"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is not greater than 3"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+        <span class="p">}</span>
+    <span class="k">case</span> <span class="mi">3</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 7"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is not greater than 7"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+        <span class="p">}</span>
+    <span class="k">case</span> <span class="mi">4</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is less than 3"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 3"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+        <span class="p">}</span>
+    <span class="k">case</span> <span class="mi">5</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is not greater than 4"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 4"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+        <span class="p">}</span>
+    <span class="k">case</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Thanks for running this code."</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">switchExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number is not greater than 2
+The number is not greater than 3
+The number is not greater than 7
+The number is less than 3
+The number is greater than 4
+Thanks for running this code.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="De-Morgan's-Law">
+<a class="anchor" href="#De-Morgan's-Law" aria-hidden="true"><span class="octicon octicon-link"></span></a>De Morgan's Law<a class="anchor-link" href="#De-Morgan's-Law"> </a>
+</h2>
+<ul>
+<li>De Morgan's Law is a way to negate "and" or "or" statements in code. Below is a demonstration on how the law works</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">deMorgan</span> <span class="c1">//define class</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="c1">//java main method</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//initializing variables</span>
+    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">a</span><span class="o">==</span><span class="mi">10</span> <span class="o">||</span> <span class="n">b</span><span class="o">==</span><span class="mi">10</span><span class="p">));</span> <span class="c1">//Will print true if a or b does not equal 10</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="o">!=</span><span class="mi">10</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">!=</span><span class="mi">10</span><span class="p">);</span> 
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">deMorgan</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>true
+true
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>De Morgan's law can be used in other code. For example between different foods. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">deMorganExample</span> <span class="c1">//define class</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="c1">//java main method</span>
+<span class="p">{</span>
+    <span class="n">String</span> <span class="n">food</span> <span class="o">=</span> <span class="s">"pasta"</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">food2</span> <span class="o">=</span> <span class="s">"pizza"</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">food</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"pizza"</span><span class="p">)</span> <span class="o">||</span> <span class="n">food</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"bread"</span><span class="p">)))</span> <span class="c1">// Makes !(false value == true value)</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Food is not pasta or pizza."</span><span class="p">);</span> <span class="c1">//Will print this</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="c1">// if not</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Food type is pasta or pizza."</span><span class="p">);</span> <span class="c1">//Will print this</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">deMorganExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Food is not pasta or pizza.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
