@@ -20,6 +20,6 @@ permalink: /Code.org Notes/
 - Senior Activities
 ![]({{ site.baseurl }}/images/field.jpg)
 - Graduating
-![]({{ site.baseurl }}/images/graduation.jpg)
+![]({{ site.baseurl }}/images/graduation.png)
 - More free time after College Apps
 - Spending time with my friends 
