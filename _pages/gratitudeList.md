@@ -40,7 +40,7 @@ permalink: /Code.org Notes/
 - Spend more time with family and friends 
 
 ## Monthly Happiness Scale
-- September: So far pretty happy for some reason. Looking forward to spending more time with friends and reading a book that I just got. Stressed about college apps and getting the essays done for them. 
+- September: 6: So far pretty happy for some reason. Looking forward to spending more time with friends and reading a book that I just got. Stressed about college apps and getting the essays done for them. 
 - October: 
 - November:
 - December: 
