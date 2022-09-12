@@ -38,3 +38,15 @@ permalink: /Code.org Notes/
 - Make a schedule right after school including daily and weekly assignments
 - Go outside and get away from technology more (go on walks or exersize)
 - Spend more time with family and friends 
+
+## Monthly Happiness Scale
+- September: So far pretty happy for some reason. Looking forward to spending more time with friends and reading a book that I just got. Stressed about college apps and getting the essays done for them. 
+- October: 
+- November:
+- December: 
+- January: 
+- February:
+- March:
+- April: 
+- May: 
+- June: 
