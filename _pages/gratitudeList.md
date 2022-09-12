@@ -10,7 +10,7 @@ permalink: /Code.org Notes/
 - Music
 ![]({{ site.baseurl }}/images/music.jpg)
 - Books 
-![]({{ site.baseurl }}/images/book.jpg)
+![]({{ site.baseurl }}/images/book.jpeg)
 - My friends
 ![]({{ site.baseurl }}/images/friends.jpg)
 - My family
@@ -20,6 +20,6 @@ permalink: /Code.org Notes/
 - Senior Activities
 ![]({{ site.baseurl }}/images/field.jpg)
 - Graduating
-![]({{ site.baseurl }}/images/graduation.png)
+![]({{ site.baseurl }}/images/graduation.jpg)
 - More free time after College Apps
 - Spending time with my friends 
