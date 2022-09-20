@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -126,9 +126,11 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#2021-Practice-FRQ:-Problem-1">2021 Practice FRQ: Problem 1 </a>
+<li class="toc-entry toc-h1"><a href="#2021-Practice-FRQ:-Problem-1">2021 Practice FRQ: Problem 1 </a></li>
+<li class="toc-entry toc-h1"><a href="#Scoring-Guidlines">Scoring Guidlines </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Testing-the-Code">Testing the Code </a></li>
+<li class="toc-entry toc-h2"><a href="#Part-A">Part A </a></li>
+<li class="toc-entry toc-h2"><a href="#Part-B">Part B </a></li>
 </ul>
 </li>
 </ul><!--
@@ -155,9 +157,6 @@ window.onload = wrap_img;
 <p>a) Write the WordMatch method scoreGuess. To determine the score to be returned, scoreGuess finds the number of times that guess occurs as a substring of secret and then multiplies that number by the square of the length of guess. Occurrences of guess may overlap
 within secret.
 Assume that the length of guess is less than or equal to the length of secret and that guess is not an empty string.</p>
-<p>b) Write the WordMatch method findBetterGuess, which returns the better guess of its two String parameters, guess1 and guess2. If the scoreGuess method returns different values for guess1 and guess2, then the guess with the higher score is returned. If the scoreGuess method returns the same value for guess1 and guess2, then the alphabetically greater guess is returned.
-The following example shows a declaration of a WordMatch object and the outcomes of some possible calls to the scoreGuess and findBetterGuess methods.
-WordMatch game = new WordMatch("concatenation");</p>
 
 </div>
 </div>
@@ -196,8 +195,34 @@ WordMatch game = new WordMatch("concatenation");</p>
 
     <span class="k">return</span> <span class="n">result</span> <span class="o">*</span> <span class="n">guess</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">*</span> <span class="n">guess</span><span class="p">.</span><span class="na">length</span><span class="p">();</span>
 <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 
-<span class="c1">// public int scoreGuess(String guess)</span>
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>b) Write the WordMatch method findBetterGuess, which returns the better guess of its two String parameters, guess1 and guess2. If the scoreGuess method returns different values for guess1 and guess2, then the guess with the higher score is returned. If the scoreGuess method returns the same value for guess1 and guess2, then the alphabetically greater guess is returned.
+The following example shows a declaration of a WordMatch object and the outcomes of some possible calls to the scoreGuess and findBetterGuess methods.
+WordMatch game = new WordMatch("concatenation");</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// public int scoreGuess(String guess)</span>
 <span class="c1">// { /* to be implemented in part (a) */ }</span>
 <span class="cm">/** Returns the better of two guesses, as determined by scoreGuess and the rules for a</span>
 <span class="cm">* tie-breaker that are described in part (b).</span>
@@ -223,7 +248,6 @@ WordMatch game = new WordMatch("concatenation");</p>
     
     <span class="k">return</span> <span class="n">guess2</span><span class="p">;</span> 
 <span class="p">}</span>
-<span class="p">}</span>
 </pre></div>
 
     </div>
@@ -236,9 +260,39 @@ WordMatch game = new WordMatch("concatenation");</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Testing-the-Code">
-<a class="anchor" href="#Testing-the-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing the Code<a class="anchor-link" href="#Testing-the-Code"> </a>
+<h1 id="Scoring-Guidlines">
+<a class="anchor" href="#Scoring-Guidlines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scoring Guidlines<a class="anchor-link" href="#Scoring-Guidlines"> </a>
+</h1>
+<h2 id="Part-A">
+<a class="anchor" href="#Part-A" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part A<a class="anchor-link" href="#Part-A"> </a>
 </h2>
+<ul>
+<li>compare guess to substring of secret</li>
+<li>Uses of substring secret with correct length for comparison with guess</li>
+<li>Loops through all necessary substrings of secret </li>
+<li>Counts number of identified occurences of guess within secret </li>
+<li>
+<p>Calculate and returns correct final score (algorithm)</p>
+</li>
+<li>
+<p>Notes: We believe we would earn a 5/5, full credit, for this part because we completed all of the elements of the point guidlines. At first, we forgot the return statement, but we were able to problem solve and fix this. It was also hard to get the correct syntax down while we were working with new elements in Java</p>
+</li>
+</ul>
+<h2 id="Part-B">
+<a class="anchor" href="#Part-B" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part B<a class="anchor-link" href="#Part-B"> </a>
+</h2>
+<ul>
+<li>Calls scoreGuess to get scores for guess1 and guess2</li>
+<li>Compares the scores</li>
+<li>Determines which guess1 and guess2 is alphabetically greater</li>
+<li>
+<p>Returns the identified guess1 or guess2 (algorithm)</p>
+</li>
+<li>
+<p>Notes: After some problem solving we believe we earned full credit. We found this part to be a little easier since it was simple if statements that we had learned previously.</p>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
