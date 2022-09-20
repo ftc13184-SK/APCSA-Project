@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -135,22 +135,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Unit-4:-Iteration">Unit 4: Iteration </a></li>
 <li class="toc-entry toc-h2"><a href="#Unit-5:-Writing-Class">Unit 5: Writing Class </a></li>
 <li class="toc-entry toc-h2"><a href="#Unit-6:-Array">Unit 6: Array </a></li>
-<li class="toc-entry toc-h2"><a href="#Unit-7:-ArrayList">Unit 7: ArrayList </a></li>
-<li class="toc-entry toc-h2"><a href="#Unit-8:-2D-Arrary">Unit 8: 2D Arrary </a></li>
-<li class="toc-entry toc-h2"><a href="#Unit-9:-Inheritance">Unit 9: Inheritance </a></li>
-<li class="toc-entry toc-h2"><a href="#Unit-10:-Recursion">Unit 10: Recursion </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Project-Based-Learning-Notes">Project Based Learning Notes </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Week-1:-Fastpages">Week 1: Fastpages </a></li>
 <li class="toc-entry toc-h2"><a href="#Week-2">Week 2 </a></li>
-<li class="toc-entry toc-h2"><a href="#Week-3">Week 3 </a></li>
-<li class="toc-entry toc-h2"><a href="#Week-4">Week 4 </a></li>
-<li class="toc-entry toc-h2"><a href="#Week-5">Week 5 </a></li>
-<li class="toc-entry toc-h2"><a href="#Week-6">Week 6 </a></li>
-<li class="toc-entry toc-h2"><a href="#Week-7">Week 7 </a></li>
-<li class="toc-entry toc-h2"><a href="#Week-8">Week 8 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -189,9 +179,131 @@ window.onload = wrap_img;
 <h2 id="Unit-2:-Using-Objects">
 <a class="anchor" href="#Unit-2:-Using-Objects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 2: Using Objects<a class="anchor-link" href="#Unit-2:-Using-Objects"> </a>
 </h2>
+<ul>
+<li>Java is object-oriented programming (OOP)</li>
+<li>Class is used to define a new data type</li>
+<li>Class can be compared to a cookie cutter which makes the cookies (objects) </li>
+<li>Each class has its own attributes and behaviors </li>
+<li>Objects are created in class and are often knwon as instances of a class</li>
+</ul>
 <h2 id="Unit-3:-Boolean-Expressions-and-if-Statements">
 <a class="anchor" href="#Unit-3:-Boolean-Expressions-and-if-Statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3: Boolean Expressions and if Statements<a class="anchor-link" href="#Unit-3:-Boolean-Expressions-and-if-Statements"> </a>
 </h2>
+<ul>
+<li>Boolean expressions are used to check if something is true or false </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Booleans</span> <span class="c1">//define class</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="c1">//java main method</span>
+<span class="p">{</span>
+    <span class="kt">boolean</span> <span class="n">isSunny</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">//declare the boolean variables</span>
+    <span class="kt">boolean</span> <span class="n">isRainy</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> 
+    <span class="k">if</span> <span class="p">(</span><span class="n">isSunny</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"It is sunny."</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"It is rainy."</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Booleans</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It is sunny.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>If statements are used to check if a condition is met. If a condition is met, the code will do something. Else statements can be used with if statements to tell the code to do something if the first condition is not met</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Else</span> 
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is greater than 2"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="c1">//the computer will run this portion if the number is less than or equal to 2</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The number is not greater than 2"</span><span class="p">);</span> <span class="c1">//This is what the computer will print</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Else</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number is not greater than 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Unit-4:-Iteration">
 <a class="anchor" href="#Unit-4:-Iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 4: Iteration<a class="anchor-link" href="#Unit-4:-Iteration"> </a>
 </h2>
@@ -201,18 +313,20 @@ window.onload = wrap_img;
 <h2 id="Unit-6:-Array">
 <a class="anchor" href="#Unit-6:-Array" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 6: Array<a class="anchor-link" href="#Unit-6:-Array"> </a>
 </h2>
-<h2 id="Unit-7:-ArrayList">
-<a class="anchor" href="#Unit-7:-ArrayList" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 7: ArrayList<a class="anchor-link" href="#Unit-7:-ArrayList"> </a>
-</h2>
-<h2 id="Unit-8:-2D-Arrary">
-<a class="anchor" href="#Unit-8:-2D-Arrary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 8: 2D Arrary<a class="anchor-link" href="#Unit-8:-2D-Arrary"> </a>
-</h2>
-<h2 id="Unit-9:-Inheritance">
-<a class="anchor" href="#Unit-9:-Inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 9: Inheritance<a class="anchor-link" href="#Unit-9:-Inheritance"> </a>
-</h2>
-<h2 id="Unit-10:-Recursion">
-<a class="anchor" href="#Unit-10:-Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 10: Recursion<a class="anchor-link" href="#Unit-10:-Recursion"> </a>
-</h2>
+<ul>
+<li>Used for storing multiple values in one variable
+-square brackete [] used to declare</li>
+<li>commas in between curly brackets to store an array (EX: String[] colors = {"blue", "red" , "orange}) </li>
+<li>you can change an array element with the index number</li>
+<li>You can figure out how many elements an array has with "length" (EX: System.out.println(color.length);)
+## Unit 7: ArrayList
+## Unit 8: 2D Arrary</li>
+<li>[row][column]</li>
+<li>Basically an array of arrays</li>
+<li>Can be declared by data_type[][] array_name = new data_type[x][y]; 
+## Unit 9: Inheritance
+## Unit 10: Recursion</li>
+</ul>
 <h1 id="Project-Based-Learning-Notes">
 <a class="anchor" href="#Project-Based-Learning-Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Based Learning Notes<a class="anchor-link" href="#Project-Based-Learning-Notes"> </a>
 </h1>
@@ -230,24 +344,17 @@ window.onload = wrap_img;
 <h2 id="Week-2">
 <a class="anchor" href="#Week-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 2<a class="anchor-link" href="#Week-2"> </a>
 </h2>
-<h2 id="Week-3">
-<a class="anchor" href="#Week-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 3<a class="anchor-link" href="#Week-3"> </a>
-</h2>
-<h2 id="Week-4">
-<a class="anchor" href="#Week-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 4<a class="anchor-link" href="#Week-4"> </a>
-</h2>
-<h2 id="Week-5">
-<a class="anchor" href="#Week-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 5<a class="anchor-link" href="#Week-5"> </a>
-</h2>
-<h2 id="Week-6">
-<a class="anchor" href="#Week-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 6<a class="anchor-link" href="#Week-6"> </a>
-</h2>
-<h2 id="Week-7">
-<a class="anchor" href="#Week-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 7<a class="anchor-link" href="#Week-7"> </a>
-</h2>
-<h2 id="Week-8">
-<a class="anchor" href="#Week-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 8<a class="anchor-link" href="#Week-8"> </a>
-</h2>
+<ul>
+<li>You can check the versions of different softwares you installed using --version (EX: python --version) for most installations</li>
+<li>You can do a lot of frontend work with your different calculators by making a frontend menu that houses 
+## Week 3
+## Week 4
+## Week 5
+## Week 6
+## Week 7
+## Week 8</li>
+</ul>
+
 </div>
 </div>
 </div>
