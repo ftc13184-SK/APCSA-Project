@@ -131,6 +131,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#How-to-print-a-simple-statement">How to print a simple statement </a></li>
 <li class="toc-entry toc-h2"><a href="#How-to-declare-variables-in-JavaScript">How to declare variables in JavaScript </a></li>
 <li class="toc-entry toc-h2"><a href="#How-to-declare-different-types-of-variables">How to declare different types of variables </a></li>
+<li class="toc-entry toc-h2"><a href="#iJavaScript-$$.async()">iJavaScript $$.async() </a></li>
 </ul>
 </li>
 </ul><!--
@@ -285,6 +286,109 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="iJavaScript-$$.async()">
+<a class="anchor" href="#iJavaScript-%24%24.async()" aria-hidden="true"><span class="octicon octicon-link"></span></a>iJavaScript $$.async()<a class="anchor-link" href="#iJavaScript-%24%24.async()"> </a>
+</h2>
+<ul>
+<li>This is used to request synchronous code. This will then evaluate the code and be ready to get more requests</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">$$</span><span class="p">.</span><span class="k">async</span><span class="p">();</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello, World!"</span><span class="p">);</span>
+
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">$$</span><span class="p">.</span><span class="nx">done</span><span class="p">,</span> <span class="mf">1000</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, World!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>You can aso add a timer to print a line of code after a while</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">$$</span><span class="p">.</span><span class="k">async</span><span class="p">();</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello, World!"</span><span class="p">);</span> <span class="c1">//How to print "Hello World" wih JavaScript</span>
+
+<span class="kd">var</span> <span class="nx">action</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">$$</span><span class="o">:</span> <span class="nx">$$</span><span class="p">,</span>
+    <span class="nx">console</span><span class="o">:</span> <span class="nx">console</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$$</span><span class="p">.</span><span class="nx">clear</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>    <span class="c1">// clear output cell</span>
+    <span class="nx">action</span><span class="p">.</span><span class="nx">$$</span><span class="p">.</span><span class="nx">sendResult</span><span class="p">(</span><span class="s2">"Goodbye!"</span><span class="p">);</span>
+<span class="p">},</span> <span class="mf">5000</span><span class="p">);</span>  <span class="c1">// 5 second timer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'Goodbye!'</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
