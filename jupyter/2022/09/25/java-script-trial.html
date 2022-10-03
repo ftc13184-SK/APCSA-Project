@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -132,6 +132,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#How-to-declare-variables-in-JavaScript">How to declare variables in JavaScript </a></li>
 <li class="toc-entry toc-h2"><a href="#How-to-declare-different-types-of-variables">How to declare different types of variables </a></li>
 <li class="toc-entry toc-h2"><a href="#iJavaScript-$$.async()">iJavaScript $$.async() </a></li>
+<li class="toc-entry toc-h2"><a href="#Building-an-Array-with-my-Scrumtean">Building an Array with my Scrumtean </a></li>
 </ul>
 </li>
 </ul><!--
@@ -389,6 +390,83 @@ window.onload = wrap_img;
 
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Building-an-Array-with-my-Scrumtean">
+<a class="anchor" href="#Building-an-Array-with-my-Scrumtean" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building an Array with my Scrumtean<a class="anchor-link" href="#Building-an-Array-with-my-Scrumtean"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a student Array of Person(s)</span>
+<span class="kd">var</span> <span class="nx">students</span> <span class="o">=</span> <span class="p">[</span> 
+    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Shraddha"</span><span class="p">,</span> <span class="s2">"ftc13184-SK"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Pravavi"</span><span class="p">,</span> <span class="s2">"PranaviInukurti"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Madhumita"</span><span class="p">,</span> <span class="s2">"mnarayan"</span><span class="p">,</span> <span class="mf">2023</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Meena"</span><span class="p">,</span> <span class="s2">"MAnn, 2023),</span>
+<span class="s2">    new Person("</span><span class="nx">Rebecca</span><span class="s2">", "</span><span class="nx">Rebecca</span><span class="o">-</span><span class="mf">123</span><span class="s2">", 2023)</span>
+<span class="s2">];</span>
+
+<span class="s2">// define a classroom and build Classroom objects and json</span>
+<span class="s2">function Classroom(teacher, students){ // 1 teacher, many student</span>
+<span class="s2">    // start Classroom with Teacher</span>
+<span class="s2">    teacher.setRole("</span><span class="nx">Teacher</span><span class="s2">");</span>
+<span class="s2">    this.teacher = teacher;</span>
+<span class="s2">    this.classroom = [teacher];</span>
+<span class="s2">    // add each Student to Classroom</span>
+<span class="s2">    this.students = students;</span>
+<span class="s2">    this.students.forEach(student =&gt; { student.setRole("</span><span class="nx">Student</span><span class="s2">"); this.classroom.push(student); });</span>
+<span class="s2">    // build json/string format of Classroom</span>
+<span class="s2">    this.json = [];</span>
+<span class="s2">    this.classroom.forEach(person =&gt; this.json.push(person.toJSON()));</span>
+<span class="s2">}</span>
+
+<span class="s2">// make a CompSci classroom from formerly defined teacher and students</span>
+<span class="s2">compsci = new Classroom(teacher, students);</span>
+
+<span class="s2">// output of Objects and JSON in CompSci classroom</span>
+<span class="s2">logItType(compsci.classroom);  // constructed classroom object</span>
+<span class="s2">logItType(compsci.classroom[0].name);  // abstract 1st objects name</span>
+<span class="s2">logItType(compsci.json[0]);  // show json conversion of 1st object to string</span>
+<span class="s2">logItType(JSON.parse(compsci.json[0]));  // show JSON.parse inverse of JSON.stringify</span>
+<span class="s2">object ; [ Person { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' },</span>
+<span class="s2">  Person {</span>
+<span class="s2">    name: 'Anthony',</span>
+<span class="s2">    ghID: 'tonyhieu',</span>
+<span class="s2">    classOf: 2022,</span>
+<span class="s2">    role: 'Student' },</span>
+<span class="s2">  Person { name: 'Bria', ghID: 'B-G101', classOf: 2023, role: 'Student' },</span>
+<span class="s2">  Person { name: 'Allie', ghID: 'xiaoa0', classOf: 2023, role: 'Student' },</span>
+<span class="s2">  Person {</span>
+<span class="s2">    name: 'Tigran',</span>
+<span class="s2">    ghID: 'Tigran7',</span>
+<span class="s2">    classOf: 2023,</span>
+<span class="s2">    role: 'Student' },</span>
+<span class="s2">  Person {</span>
+<span class="s2">    name: 'Rebecca',</span>
+<span class="s2">    ghID: 'Rebecca-123',</span>
+<span class="s2">    classOf: 2023,</span>
+<span class="s2">    role: 'Student' } ]</span>
+<span class="s2">string ; Mr M</span>
+<span class="s2">string ; {"</span><span class="nx">name</span><span class="s2">":"</span><span class="nx">Mr</span> <span class="nx">M</span><span class="s2">","</span><span class="nx">ghID</span><span class="s2">":"</span><span class="nx">jm1021</span><span class="s2">","</span><span class="nx">classOf</span><span class="s2">":1977,"</span><span class="nx">role</span><span class="s2">":"</span><span class="nx">Teacher</span><span class="err">"</span><span class="p">}</span>
+<span class="nx">object</span> <span class="p">;</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">'Mr M'</span><span class="p">,</span> <span class="nx">ghID</span><span class="o">:</span> <span class="s1">'jm1021'</span><span class="p">,</span> <span class="nx">classOf</span><span class="o">:</span> <span class="mf">1977</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s1">'Teacher'</span> <span class="p">}</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
