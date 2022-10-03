@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "API Lesson",
-            "content": "What are API&#39;s? . Working with APL and ASCii | API: (Application programming interface) a way for multiple computer programs to communcate with each other | EX: a weather station has a software to detect weather daily. This can be displayed on the weather app on your phone. The weather app communicates with the weather station&#39;s software program | RapidAPI: Used to connect API&#39;s | .",
+            "content": "What are API&#39;s? . Working with APL and ASCii | API: (Application programming interface) a way for multiple computer programs to communcate with each other | EX: a weather station has a software to detect weather daily. This can be displayed on the weather app on your phone. The weather app communicates with the weather station&#39;s software program | RapidAPI: Used to connect API&#39;s | . Questions . What are the benefits of using API? | Make a way for different softwares/programs to communicate with each other | Make it easier to us the data from others | . Benefits of using backend development? | We can display data collected from other codes | Can be used in our group project | .",
             "url": "https://ftc13184-sk.github.io/APCSA-Project/jupyter/2022/10/02/API-Lesson.html",
             "relUrl": "/jupyter/2022/10/02/API-Lesson.html",
             "date": " • Oct 2, 2022"
