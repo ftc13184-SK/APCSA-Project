@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: First Frontpage Test
+categorie: [html]
+title: First Frontpage Test
+permalink: /Frontpage Test/
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
