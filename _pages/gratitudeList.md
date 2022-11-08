@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gratitude
-permalink: /Code.org Notes/
+permalink: /gratitudelist/
 ---
 # Gratitude List
 - I think this page is going to be great to look back on whenever I'm feeling stressed, overwhelmed, or overall quite down. This part of my blog is designed to make me think more positively and look forward to things in my life :) 
