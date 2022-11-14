@@ -4,6 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
+Welcome to Shraddha Kadaba's fastpages! 
+I am a student taking CSA and this is my class blog. 
+
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
