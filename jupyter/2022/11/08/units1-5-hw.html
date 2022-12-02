@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      23 min read
+      22 min read
     
 </span></p>
 
@@ -1419,46 +1419,37 @@ overloading - multiple functions with tehsame name but different parameters (eit
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// Java Program for Method overloading</span>
-<span class="c1">// By using Different Types of Arguments </span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
  
-<span class="c1">// Class 1</span>
-<span class="c1">// Helper class</span>
-<span class="kd">class</span> <span class="nc">Helper</span> <span class="p">{</span>
- 
-    <span class="c1">// Method with 2 integer parameters</span>
-    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">Multiply</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-    <span class="p">{</span>
- 
-        <span class="c1">// Returns product of integer numbers</span>
-        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">Scanner</span> <span class="n">input</span><span class="p">;</span>
+    <span class="kt">boolean</span> <span class="n">separateCategory</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">currentGrade</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">desiredGrade</span><span class="p">;</span> 
+    <span class="kt">float</span> <span class="n">percentOfFinal</span><span class="p">;</span> 
+    
+    <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Do you want separate categories? "</span><span class="p">);</span>
+    <span class="n">separateCategory</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">separateCategory</span><span class="p">);</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">separateCategory</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter current grade? "</span><span class="p">);</span>
+        <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">currentGrade</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter desired grade? "</span><span class="p">);</span>
+        <span class="n">desiredGrade</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">desiredGrade</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter percent of grade that is final? "</span><span class="p">);</span>
+        <span class="n">percentOfFinal</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">percentOfFinal</span><span class="p">);</span>
+
+        <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+        
+        <span class="kt">float</span> <span class="n">gradeNeeded</span> <span class="o">=</span> <span class="p">(</span><span class="n">desiredGrade</span> <span class="o">-</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">percentOfFinal</span><span class="p">))</span><span class="o">/</span><span class="n">percentOfFinal</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">gradeNeeded</span><span class="p">);</span>
     <span class="p">}</span>
- 
-    <span class="c1">// Method 2</span>
-    <span class="c1">// With same name but with 2 double parameters</span>
-    <span class="kd">static</span> <span class="kt">double</span> <span class="nf">Multiply</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span>
-    <span class="p">{</span>
- 
-        <span class="c1">// Returns product of double numbers</span>
-        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
- 
-<span class="c1">// Class 2</span>
-<span class="c1">// Main class</span>
-<span class="kd">class</span> <span class="nc">GFG</span> <span class="p">{</span>
- 
-    <span class="c1">// Main driver method</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
-    <span class="p">{</span>
- 
-        <span class="c1">// Calling method by passing</span>
-        <span class="c1">// input as in arguments</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Helper</span><span class="p">.</span><span class="na">Multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Helper</span><span class="p">.</span><span class="na">Multiply</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">));</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">GFG</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -1471,8 +1462,11 @@ overloading - multiple functions with tehsame name but different parameters (eit
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8
-34.65
+<pre>Do you want separate categories? true
+Enter current grade? 91.0
+Enter desired grade? 95.0
+Enter percent of grade that is final? 10.0
+91.4
 </pre>
 </div>
 </div>
