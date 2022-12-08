@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -132,6 +132,18 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a></li>
 <li class="toc-entry toc-h2"><a href="#Hack-2">Hack 2 </a></li>
 <li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-8:-2-D-Arrays">Unit 8: 2-D Arrays </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hack-2">Hack 2 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Hack-4">Hack 4 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Extra-Credit-Hack:-Making-a-Christmas-Tree">Extra Credit Hack: Making a Christmas Tree </a></li>
 </ul>
 </li>
 </ul><!--
@@ -276,6 +288,244 @@ window.onload = wrap_img;
 <span class="p">}</span>
 
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-8:-2-D-Arrays">
+<a class="anchor" href="#Unit-8:-2-D-Arrays" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 8: 2-D Arrays<a class="anchor-link" href="#Unit-8:-2-D-Arrays"> </a>
+</h1>
+<h2 id="Hack-1">
+<a class="anchor" href="#Hack-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1<a class="anchor-link" href="#Hack-1"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+ 
+      <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="p">{</span> <span class="s">"a"</span><span class="p">,</span> <span class="s">"f"</span><span class="p">,</span> <span class="s">"g"</span> <span class="p">},</span>
+         <span class="p">{</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"h"</span> <span class="p">},</span>
+         <span class="p">{</span> <span class="s">"c"</span><span class="p">,</span> <span class="s">"d"</span><span class="p">,</span> <span class="s">"i"</span> <span class="p">}</span>
+      <span class="p">};</span>
+ 
+      <span class="c1">// Print the last element in the array!</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">arr</span><span class="p">.</span> <span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span> <span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span>
+
+    <span class="p">}</span>
+ 
+ <span class="p">}</span>
+ <span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-2">
+<a class="anchor" href="#Hack-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 2<a class="anchor-link" href="#Hack-2"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+ 
+      <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="p">{</span> <span class="s">"Atlanta"</span><span class="p">,</span> <span class="s">"Baltimore"</span><span class="p">,</span> <span class="s">"Chicago"</span> <span class="p">},</span>
+         <span class="p">{</span> <span class="s">"Australia"</span><span class="p">,</span> <span class="s">"Boston"</span><span class="p">,</span> <span class="s">"Cincinnati"</span> <span class="p">},</span>
+         <span class="p">{</span> <span class="s">"Austin"</span><span class="p">,</span> <span class="s">"Beaumont"</span><span class="p">,</span> <span class="s">"Columbus"</span> <span class="p">}</span>
+      <span class="p">};</span>
+ 
+       <span class="c1">// Change Austin to Athens and print!</span>
+       <span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="s">"Athens"</span><span class="p">;</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>       
+    <span class="p">}</span>
+ 
+ <span class="p">}</span>
+ <span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-3">
+<a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+ 
+       <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
+          <span class="p">{</span> <span class="s">"Atlanta"</span><span class="p">,</span> <span class="s">"Baltimore"</span><span class="p">,</span> <span class="s">"Chicago"</span> <span class="p">},</span>
+          <span class="p">{</span> <span class="s">"Australia"</span><span class="p">,</span> <span class="s">"Boston"</span><span class="p">,</span> <span class="s">"Cincinnati"</span> <span class="p">},</span>
+          <span class="p">{</span> <span class="s">"Austin"</span><span class="p">,</span> <span class="s">"Beaumont"</span><span class="p">,</span> <span class="s">"Columbus"</span> <span class="p">}</span>
+       <span class="p">};</span>
+ 
+       <span class="c1">// Print out the array without using numerical values!</span>
+       <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> 
+       <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+
+       <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">", "</span> <span class="p">);</span>
+         <span class="p">}</span>
+       <span class="p">}</span>
+       
+    <span class="p">}</span>
+ 
+ <span class="p">}</span>
+ <span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-4">
+<a class="anchor" href="#Hack-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 4<a class="anchor-link" href="#Hack-4"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span> <span class="s">"Atlanta"</span><span class="p">,</span> <span class="s">"Baltimore"</span><span class="p">,</span> <span class="s">"Chicago"</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="s">"Australia"</span><span class="p">,</span> <span class="s">"Boston"</span><span class="p">,</span> <span class="s">"Cincinnati"</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="s">"Austin"</span><span class="p">,</span> <span class="s">"Beaumont"</span><span class="p">,</span> <span class="s">"Columbus"</span> <span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="n">String</span> <span class="n">longest</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+
+        <span class="c1">// Use nested for loops to find the longest or shortest string!</span>
+    <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> 
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+    
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">col</span><span class="o">&lt;</span><span class="n">c</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="o">&gt;</span> <span class="n">longest</span><span class="p">.</span><span class="na">length</span><span class="p">()){</span>
+                <span class="n">longest</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span> 
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">longest</span><span class="p">);</span> 
+    <span class="p">}</span>
+ 
+ <span class="p">}</span>
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Extra-Credit-Hack:-Making-a-Christmas-Tree">
+<a class="anchor" href="#Extra-Credit-Hack:-Making-a-Christmas-Tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Credit Hack: Making a Christmas Tree<a class="anchor-link" href="#Extra-Credit-Hack:-Making-a-Christmas-Tree"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tree</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">voild</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">tree</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">" "</span> <span class="p">,</span><span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">}</span>
+            <span class="p">{</span><span class="s">" "</span> <span class="p">,</span><span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">}</span>
+            <span class="p">{</span><span class="s">" "</span> <span class="p">,</span><span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">}</span>
+            <span class="p">{</span><span class="s">"*"</span> <span class="p">,</span><span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">}</span>
+            <span class="p">{</span><span class="s">" "</span> <span class="p">,</span><span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"M"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">}</span>
+        <span class="p">};</span> 
+
+        <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">tree</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> 
+        <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">tree</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> 
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">){</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">tree</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Tree</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
