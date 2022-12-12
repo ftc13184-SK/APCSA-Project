@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -138,6 +138,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Objectives">Objectives </a></li>
 <li class="toc-entry toc-h2"><a href="#2D-Array-Vocab">2D Array Vocab </a></li>
 <li class="toc-entry toc-h2"><a href="#Nested-Loops">Nested Loops </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-10-Recursion">Unit 10 Recursion </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Learning-Objectives">Learning Objectives </a></li>
+<li class="toc-entry toc-h2"><a href="#10.1-Recursion">10.1 Recursion </a></li>
+<li class="toc-entry toc-h2"><a href="#10.2-Binary-Search">10.2 Binary Search </a></li>
+<li class="toc-entry toc-h2"><a href="#Selection-Sort">Selection Sort </a></li>
+<li class="toc-entry toc-h2"><a href="#Merge-Sort">Merge Sort </a></li>
 </ul>
 </li>
 </ul><!--
@@ -407,6 +416,87 @@ c d i j
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-10-Recursion">
+<a class="anchor" href="#Unit-10-Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 10 Recursion<a class="anchor-link" href="#Unit-10-Recursion"> </a>
+</h1>
+<h2 id="Learning-Objectives">
+<a class="anchor" href="#Learning-Objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a>
+</h2>
+<ul>
+<li>Learn about how to write simple recursive methods and determine the purpose or output of a recursive method by tracing</li>
+<li>Determine the result of recursive method calls</li>
+<li>Primarily in the multiple choice section; students were asked to determine the result or describe the behavior of a recursive method</li>
+<li>5 to 7.5% exam weighting</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="10.1-Recursion">
+<a class="anchor" href="#10.1-Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>10.1 Recursion<a class="anchor-link" href="#10.1-Recursion"> </a>
+</h2>
+<ul>
+<li>A recursive method is a method that calls itself - a subproblem that calls itself repeatedly</li>
+<li>To parts to the method: <ul>
+<li>a base case </li>
+<li>recursive call </li>
+</ul>
+</li>
+<li>After multiple calls, the base case is reached where recursion is stopped and a value is returned<ul>
+<li>Should be written first to avoid infinite recursion</li>
+</ul>
+</li>
+<li>Recursions are similar to loops - recursions can be written as loops</li>
+<li>Iteration vs. Recursion:<ul>
+<li>Iteration is used when we execute a set of instructions repeatedly (through a loop) until the condition becomes false</li>
+<li>Recursion is used when the solution to a bigger problem can be expressed in terms of smaller problems</li>
+<li>Main Difference: recursion uses function calls vs. iteration uses for and while loops</li>
+</ul>
+</li>
+</ul>
+<h2 id="10.2-Binary-Search">
+<a class="anchor" href="#10.2-Binary-Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>10.2 Binary Search<a class="anchor-link" href="#10.2-Binary-Search"> </a>
+</h2>
+<ul>
+<li>Binary search algorithm<ul>
+<li>Data must be in sorted order</li>
+<li>Keeps halving array until value is found</li>
+<li>More efficient than linear search (O(log2n) vs O(n))</li>
+</ul>
+</li>
+</ul>
+<h2 id="Selection-Sort">
+<a class="anchor" href="#Selection-Sort" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection Sort<a class="anchor-link" href="#Selection-Sort"> </a>
+</h2>
+<ul>
+<li>Linear Recursion:<ul>
+<li>A function that only makes a single call to itself each time the function runs (as opposed to one that would call itself multiple times during its execution)</li>
+</ul>
+</li>
+<li>Selection Sort:<ul>
+<li>The algorithm works by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the end of the sorted part</li>
+</ul>
+</li>
+</ul>
+<h2 id="Merge-Sort">
+<a class="anchor" href="#Merge-Sort" aria-hidden="true"><span class="octicon octicon-link"></span></a>Merge Sort<a class="anchor-link" href="#Merge-Sort"> </a>
+</h2>
+<ul>
+<li>Can be used to sort ArrayList structures</li>
+<li>Uses a Divide and Conquer algorithm</li>
+<li>It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves</li>
+<li>merge() function is used for merging two halves</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 
 
