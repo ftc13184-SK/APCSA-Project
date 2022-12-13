@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -141,6 +141,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
 <li class="toc-entry toc-h2"><a href="#Hack-4">Hack 4 </a></li>
 <li class="toc-entry toc-h2"><a href="#Extra-Credit-Hack:-Making-a-Christmas-Tree">Extra Credit Hack: Making a Christmas Tree </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-9">Unit 9 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Unit-10">Unit 10 </a>
@@ -531,6 +536,173 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-9">
+<a class="anchor" href="#Unit-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 9<a class="anchor-link" href="#Unit-9"> </a>
+</h1>
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Candy</span> <span class="p">{</span>
+    <span class="kd">protected</span> <span class="kt">double</span> <span class="n">candyCalories</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">double</span> <span class="n">candyRating</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">double</span> <span class="n">candySize</span><span class="p">;</span> 
+
+    <span class="kd">public</span> <span class="nf">Candy</span><span class="p">(</span><span class="kt">double</span> <span class="n">candyCalories</span><span class="p">,</span> <span class="kt">double</span> <span class="n">candySize</span><span class="p">,</span> <span class="kt">double</span> <span class="n">candyRating</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">candyCalories</span> <span class="o">=</span> <span class="n">candyCalories</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">candyRating</span> <span class="o">=</span> <span class="n">candyRating</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">candySize</span> <span class="o">=</span> <span class="n">candySize</span><span class="p">;</span> 
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">healthWarning</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Candy is not healthy. Consume in moderation!"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Candy</span> <span class="n">can</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Candy</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">9.4</span><span class="p">);</span>
+        <span class="n">can</span><span class="p">.</span><span class="na">healthWarning</span><span class="p">();</span>
+        
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Candy</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Candy is not healthy. Consume in moderation!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Starbursts</span> <span class="kd">extends</span> <span class="n">Candy</span><span class="p">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">candyColor</span><span class="p">;</span> 
+    <span class="kd">public</span> <span class="nf">Starbursts</span><span class="p">(</span><span class="kt">double</span> <span class="n">candyCalories</span><span class="p">,</span> <span class="kt">double</span> <span class="n">candySize</span><span class="p">,</span> <span class="kt">double</span> <span class="n">candyRating</span><span class="p">,</span> <span class="n">String</span> <span class="n">candyColor</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">candyCalories</span><span class="p">,</span> <span class="n">candySize</span><span class="p">,</span> <span class="n">candyRating</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">candyColor</span> <span class="o">=</span> <span class="n">candyColor</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">healthWarning</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Starbursts are not good for you!!!"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">type</span><span class="p">(</span><span class="n">String</span> <span class="n">type1</span><span class="p">){</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Your candy is "</span> <span class="o">+</span> <span class="n">type1</span> <span class="o">+</span> <span class="s">"."</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">type</span><span class="p">(</span><span class="n">String</span> <span class="n">type1</span><span class="p">,</span> <span class="n">String</span> <span class="n">type2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Your candy is "</span> <span class="o">+</span> <span class="n">type1</span> <span class="o">+</span> <span class="s">" and "</span> <span class="o">+</span> <span class="n">type2</span> <span class="o">+</span> <span class="s">"."</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Starbursts</span> <span class="n">star</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Starbursts</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="s">"Red"</span><span class="p">);</span>
+        <span class="n">star</span><span class="p">.</span><span class="na">healthWarning</span><span class="p">();</span>
+        <span class="n">star</span><span class="p">.</span><span class="na">type</span><span class="p">(</span><span class="s">"sweet"</span><span class="p">);</span>
+        <span class="n">star</span><span class="p">.</span><span class="na">type</span><span class="p">(</span><span class="s">"sweet"</span><span class="p">,</span> <span class="s">"chewy"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Starbursts</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Starbursts are not good for you!!!
+Your candy is sweet.
+Your candy is sweet and chewy.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Smarties</span> <span class="kd">extends</span> <span class="n">Candy</span><span class="p">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">candyColor</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="nf">Smarties</span><span class="p">(</span><span class="kt">double</span> <span class="n">candyCalories</span><span class="p">,</span> <span class="kt">double</span> <span class="n">candySize</span><span class="p">,</span> <span class="kt">double</span> <span class="n">candyRating</span><span class="p">,</span> <span class="n">String</span> <span class="n">candyColor</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">candyCalories</span><span class="p">,</span> <span class="n">candySize</span><span class="p">,</span> <span class="n">candyRating</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">candyColor</span> <span class="o">=</span> <span class="n">candyColor</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">healthWarning</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Smarties are not good for you!!!"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Smarties</span> <span class="n">smart</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Smarties</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="s">"Red"</span><span class="p">);</span>
+        <span class="n">smart</span><span class="p">.</span><span class="na">healthWarning</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Smarties</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Smarties are not good for you!!!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
