@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Github and Project Best Practices | Shraddha’s Fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Github and Project Best Practices" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A blog for my trimester work." />
+<meta property="og:description" content="A blog for my trimester work." />
+<link rel="canonical" href="https://ftc13184-sk.github.io/APCSA-Project/jupyter/pbl/2022/03/02/deployment-guide.html" />
+<meta property="og:url" content="https://ftc13184-sk.github.io/APCSA-Project/jupyter/pbl/2022/03/02/deployment-guide.html" />
+<meta property="og:site_name" content="Shraddha’s Fastpages" />
+<meta property="og:image" content="https://ftc13184-sk.github.io/APCSA-Project/images/chart-preview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-02T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ftc13184-sk.github.io/APCSA-Project/images/chart-preview.png" />
+<meta property="twitter:title" content="Github and Project Best Practices" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-02T00:00:00-06:00","datePublished":"2022-03-02T00:00:00-06:00","description":"A blog for my trimester work.","headline":"Github and Project Best Practices","image":"https://ftc13184-sk.github.io/APCSA-Project/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://ftc13184-sk.github.io/APCSA-Project/jupyter/pbl/2022/03/02/deployment-guide.html"},"url":"https://ftc13184-sk.github.io/APCSA-Project/jupyter/pbl/2022/03/02/deployment-guide.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/APCSA-Project/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://ftc13184-sk.github.io/APCSA-Project/feed.xml" title="Shraddha's Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/APCSA-Project/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/APCSA-Project/">Shraddha&#39;s Fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/APCSA-Project/Code.org%20Notes/">Code.org Notes</a><a class="page-link" href="/APCSA-Project/CSA%20Notes/">CSA Notes</a><a class="page-link" href="/APCSA-Project/about/">About Me</a><a class="page-link" href="/APCSA-Project/gratitudelist/">Gratitude</a><a class="page-link" href="/APCSA-Project/search/">Search</a><a class="page-link" href="/APCSA-Project/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Github and Project Best Practices</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-02T00:00:00-06:00" itemprop="datePublished">
+        2022-03-02 00:00:00 -0600
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/APCSA-Project/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/APCSA-Project/categories/#PBL">PBL</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          
+          
+          
+          
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Making-a-Project">Making a Project </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#1.-Gathering-an-Idea-and-Brainstorming">1. Gathering an Idea and Brainstorming </a></li>
+<li class="toc-entry toc-h2"><a href="#2.-Planning">2. Planning </a></li>
+<li class="toc-entry toc-h2"><a href="#3.-Tracking-your-progress">3. Tracking your progress </a></li>
+<li class="toc-entry toc-h2"><a href="#Projects">Projects </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#3.-Development">3. Development </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Branching">Branching </a></li>
+<li class="toc-entry toc-h2"><a href="#Pull-Requests">Pull Requests </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#4.-Deployment">4. Deployment </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-03-02-deployment-guide.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Making-a-Project">
+<a class="anchor" href="#Making-a-Project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making a Project<a class="anchor-link" href="#Making-a-Project"> </a>
+</h1>
+<h2 id="1.-Gathering-an-Idea-and-Brainstorming">
+<a class="anchor" href="#1.-Gathering-an-Idea-and-Brainstorming" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Gathering an Idea and Brainstorming<a class="anchor-link" href="#1.-Gathering-an-Idea-and-Brainstorming"> </a>
+</h2>
+<p>Before you start to code, make sure everyone in your group is interested in your project. Try to come up with multiple different ideas and narrow it down to the one that gorup members are most interested in and is the most attainable</p>
+<h2 id="2.-Planning">
+<a class="anchor" href="#2.-Planning" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Planning<a class="anchor-link" href="#2.-Planning"> </a>
+</h2>
+<p>Start designing your website based on the requirments and your ideas. Make sure to clearly detail each page of your project and the color scheme of the website.</p>
+<p>Tools for designing: Google Slides, Canva, Figma, etc.</p>
+<h2 id="3.-Tracking-your-progress">
+<a class="anchor" href="#3.-Tracking-your-progress" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Tracking your progress<a class="anchor-link" href="#3.-Tracking-your-progress"> </a>
+</h2>
+<p>Use <strong>GitHub Issues</strong> to create and track progress on requirments as well as note any major changes to the project</p>
+
+<pre><code>1. In your repository, click the `Issues` tab 
+2. Click `New Issue`
+3. Create a title for your issue, making sure to be detailed. Add links from your code or any other resources
+4. To collaborate on a project, assign others to the issue
+
+</code></pre>
+<p>Use Github pages to make weekly blogs about your progress, including technical details about what went well and what you could improve on, making the goals for the next week clear.</p>
+<p>Use a Scrum Board to assign weekly tasks to each person and keep track of what is being completed.</p>
+<h2 id="Projects">
+<a class="anchor" href="#Projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects<a class="anchor-link" href="#Projects"> </a>
+</h2>
+<p>Steps to create your project and collaborate</p>
+
+<pre><code>1. In your project, navigate to projects,, and create a new project.
+2. Add a project description and readme (you can update your readmme as you go). 
+4. Once you've created your poject, you can add columns to organize issues for your project's repositories
+    For example, frontend and backend repositories or other repositories to test</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.-Development">
+<a class="anchor" href="#3.-Development" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Development<a class="anchor-link" href="#3.-Development"> </a>
+</h1>
+<p>Make sure to install the GitHub extension with VS Code so that you can use the two platforms together.</p>
+<ol>
+<li>
+<strong>Fork</strong> the main project repository. This will give you a copy of the upstream repo, allowing you to iterate on ideas before merging your changes into the main project. </li>
+</ol>
+<p>In the repository, click on fork:</p>
+<ol>
+<li>
+<p><strong>Clone</strong> the forked repository onto your local system. This is the copy of the code that you will be working with. This also makes it so that you are able to test locally
+ You can also navigate to vs code directly (making sure to be in wsl for Windows) and click "Clone from a Git Repository" to clone</p>
+</li>
+<li>
+<p>Enter your project's directory, and open the project in VS Code.</p>
+</li>
+<li>
+<p>If you make any changes, first stage them. Then, commit them. This will assign your changes to a "commit", making them easier to keep track of. Make sure to push before you pull to prevent running into any errors
+ Make sure to commit frequently and add a descriptive commit messages so you can find that commit if necessary</p>
+</li>
+<li>
+<p>Push your changes to your forked repository.</p>
+</li>
+</ol>
+<h2 id="Branching">
+<a class="anchor" href="#Branching" aria-hidden="true"><span class="octicon octicon-link"></span></a>Branching<a class="anchor-link" href="#Branching"> </a>
+</h2>
+<p>Instead of pushing all of your changes to the <code>main</code> branch, it's good practice to work on a separate branch specifically dedicated to the feature you are testing. When you switch branches, your commits will be saved to the branch you have checked out.</p>
+<p>To switch branches, use the command:
+<code>git checkout &lt;name of branch&gt;</code></p>
+<p>For more details on this, use <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository">this</a>.</p>
+<h2 id="Pull-Requests">
+<a class="anchor" href="#Pull-Requests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pull Requests<a class="anchor-link" href="#Pull-Requests"> </a>
+</h2>
+<p>Once you're ready to merge your changes with the main upstream repository, you can create a Pull Request</p>
+<p><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">Tutorial Source</a></p>
+<ol>
+<li>
+<p>Navigate to the branch with the changes you want to merge.</p>
+</li>
+<li>
+<p>Click <code>Pull Request</code> above the list of files.</p>
+</li>
+<li>
+<p>Make sure your pull request has the main repository of the upstream branch as the <code>base</code>. Double check you are on the right branch.</p>
+</li>
+<li>
+<p>Add a title and description to your pull request, and create it. Document the changes that you made, and include any helpful screenshots/information.</p>
+</li>
+<li>
+<p>Your pull requests can be tested or viewed by others to make sure it worksbefore merging to the master branch</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.-Deployment">
+<a class="anchor" href="#4.-Deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Deployment<a class="anchor-link" href="#4.-Deployment"> </a>
+</h1>
+<p>Deployment connects the backend repository to the frontend repository</p>
+<p>Instructions for AWS Deployment can be found <a href="https://nighthawkcoders.github.io/APCSA//techtalk/deploy">here</a>.</p>
+<p>Set up automatic deployment for your backend to speed up the development process and test faster.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="ftc13184-SK/APCSA-Project"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/APCSA-Project/jupyter/pbl/2022/03/02/deployment-guide.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/APCSA-Project/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://ftc13184-sk.github.io/APCSA-Project/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/APCSA-Project/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A blog for my trimester work.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/exampleUser" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/APCSA-Project/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/exampleUser" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/APCSA-Project/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
